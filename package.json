@@ -1,0 +1,23 @@
+{
+  "name": "ai-agent-workflow",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Sanitized n8n workflow for a personal AI operations agent.",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/validate-workflow.mjs",
+    "validate": "node scripts/validate-workflow.mjs"
+  },
+  "keywords": [
+    "n8n",
+    "ai-agent",
+    "automation",
+    "telegram",
+    "workflow",
+    "gmail",
+    "calendar",
+    "notion",
+    "github-memory"
+  ],
+  "license": "MIT"
+}

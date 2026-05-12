@@ -14,9 +14,35 @@
   <img alt="Validation" src="https://img.shields.io/badge/workflow_validation-required-0f766e?style=flat-square" />
 </p>
 
+![AI Agent Workflow architecture](docs/assets/agent-workflow-architecture.svg)
+
 Sanitized n8n workflow for a personal AI operations agent.
 
 This repo is a public, recruiter-friendly version of a real automation workflow. It keeps the architecture and implementation shape visible while removing private credentials, personal account IDs, private repository names, webhook secrets, and local paths.
+
+## Case study
+
+### Problem
+A real personal automation agent is useful as a portfolio case only if the
+implementation shape stays visible and private accounts, memory paths,
+credentials, and webhook details are removed completely.
+
+### Solution
+I turned the private workflow into a public-safe n8n export with placeholder
+credentials, clear import instructions, GitHub-backed memory framing, and a
+validation script that fails on leaked secret-like values.
+
+### Engineering decisions
+- Keep one importable workflow rather than fragmenting the showcase into partial exports
+- Preserve the agent routing shape across Telegram, chat, schedules, and tools
+- Replace private identifiers with explicit placeholders
+- Add a validation script as the publish gate
+- Document reconnect steps instead of committing live credential references
+
+### Outcome
+The repo works as an AI automation case study: it shows practical agent design,
+tool orchestration, public-safe hygiene, and automation verification without
+exposing private infrastructure.
 
 ## What this shows
 
@@ -30,7 +56,7 @@ This repo is a public, recruiter-friendly version of a real automation workflow.
 - Scheduled morning, pre-meeting, midday, evening, and weekly heartbeat prompts
 - Validation script that blocks leaked credentials before publishing
 
-## Architecture
+## Workflow shape
 
 ```text
 Telegram / Chat / Schedule

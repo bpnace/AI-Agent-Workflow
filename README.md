@@ -1,11 +1,17 @@
 # AI Agent Workflow
 
 <p>
+  <a href="https://github.com/bpnace/AI-Agent-Workflow/actions/workflows/ci.yml">
+    <img alt="CI" src="https://github.com/bpnace/AI-Agent-Workflow/actions/workflows/ci.yml/badge.svg?branch=main" />
+  </a>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-2563EB?style=flat-square" />
+  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-22-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
   <img alt="n8n" src="https://img.shields.io/badge/n8n-workflow-EA4B71?style=flat-square&logo=n8n&logoColor=white" />
   <img alt="AI Agent" src="https://img.shields.io/badge/AI%20Agent-tool%20router-111827?style=flat-square" />
   <img alt="Telegram" src="https://img.shields.io/badge/Telegram-bot-26A5E4?style=flat-square&logo=telegram&logoColor=white" />
   <img alt="GitHub Memory" src="https://img.shields.io/badge/GitHub-memory-181717?style=flat-square&logo=github&logoColor=white" />
   <img alt="Sanitized" src="https://img.shields.io/badge/Sanitized-public%20safe-2ea043?style=flat-square" />
+  <img alt="Validation" src="https://img.shields.io/badge/workflow_validation-required-0f766e?style=flat-square" />
 </p>
 
 Sanitized n8n workflow for a personal AI operations agent.

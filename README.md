@@ -8,6 +8,8 @@
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-22-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
   <img alt="n8n" src="https://img.shields.io/badge/n8n-workflow-EA4B71?style=flat-square&logo=n8n&logoColor=white" />
   <img alt="AI Agent" src="https://img.shields.io/badge/AI%20Agent-tool%20router-111827?style=flat-square" />
+  <img alt="Security" src="https://img.shields.io/badge/security-Dependabot_%2B_CodeQL-2ea043?style=flat-square" />
+  <img alt="License" src="https://img.shields.io/badge/license-proprietary_portfolio_review-6B7280?style=flat-square" />
   <img alt="Telegram" src="https://img.shields.io/badge/Telegram-bot-26A5E4?style=flat-square&logo=telegram&logoColor=white" />
   <img alt="GitHub Memory" src="https://img.shields.io/badge/GitHub-memory-181717?style=flat-square&logo=github&logoColor=white" />
   <img alt="Sanitized" src="https://img.shields.io/badge/Sanitized-public%20safe-2ea043?style=flat-square" />

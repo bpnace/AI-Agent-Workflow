@@ -2545,7 +2545,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const input = $input.first().json || {};\nconst body = input.body && typeof input.body === 'object' ? { ...input.body } : { ...input };\nconst headers = input.headers || {};\nconst headerSecret = String(headers['x-showcase-test-secret'] || headers['X-Showcase-Test-Secret'] || '');\nconst bodySecret = String(body.showcase_test_secret || '');\nif (headerSecret !== 'codex-test-20260424-7f5c9b2d' && bodySecret !== 'codex-test-20260424-7f5c9b2d') return [];\ndelete body.showcase_test_secret;\nreturn [{ json: body }];"
+        "jsCode": "const input = $input.first().json || {};\nconst body = input.body && typeof input.body === 'object' ? { ...input.body } : { ...input };\nconst headers = input.headers || {};\nconst headerSecret = String(headers['x-showcase-test-secret'] || headers['X-Showcase-Test-Secret'] || '');\nconst bodySecret = String(body.showcase_test_secret || '');\nconst expectedSecret = String(process.env.SHOWCASE_TEST_SECRET || '');\nif (!expectedSecret || (headerSecret !== expectedSecret && bodySecret !== expectedSecret)) return [];\ndelete body.showcase_test_secret;\nreturn [{ json: body }];"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -2577,7 +2577,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const input = $input.first().json || {};\nconst body = input.body && typeof input.body === 'object' ? { ...input.body } : { ...input };\nconst headers = input.headers || {};\nconst headerSecret = String(headers['x-showcase-test-secret'] || headers['X-Showcase-Test-Secret'] || '');\nconst bodySecret = String(body.showcase_test_secret || '');\nif (headerSecret !== 'codex-test-20260424-7f5c9b2d' && bodySecret !== 'codex-test-20260424-7f5c9b2d') return [];\nreturn [{ json: {\n  scenario: body.scenario || 'midday',\n  prompt: body.prompt || 'Showcase E2E Heartbeat Test. Nutze den normalen OpsAgent Pfad.',\n} }];"
+        "jsCode": "const input = $input.first().json || {};\nconst body = input.body && typeof input.body === 'object' ? { ...input.body } : { ...input };\nconst headers = input.headers || {};\nconst headerSecret = String(headers['x-showcase-test-secret'] || headers['X-Showcase-Test-Secret'] || '');\nconst bodySecret = String(body.showcase_test_secret || '');\nconst expectedSecret = String(process.env.SHOWCASE_TEST_SECRET || '');\nif (!expectedSecret || (headerSecret !== expectedSecret && bodySecret !== expectedSecret)) return [];\nreturn [{ json: {\n  scenario: body.scenario || 'midday',\n  prompt: body.prompt || 'Showcase E2E Heartbeat Test. Nutze den normalen OpsAgent Pfad.',\n} }];"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,

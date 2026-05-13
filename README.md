@@ -98,6 +98,13 @@ npm test
 
 The validator fails if the workflow contains n8n credential references, private identifiers from the original workflow, common token formats, or real secret-like values.
 
+For local pre-publish checks, add comma-separated private terms without
+committing them:
+
+```bash
+SHOWCASE_PRIVATE_TERMS="private-name,private-repo,private-domain" npm test
+```
+
 ## Notes
 
 This is a showcase workflow, not a drop-in production bundle. The original private deployment used real credentials and personal memory paths. Those have intentionally been replaced with placeholders.
